@@ -26,7 +26,7 @@ ark-curve-constraint-tests = { path = "../curve-constraint-tests", default-featu
 ark-relations = { version = "0.4.0", default-features = false }
 
 [features]
-default = [ "curve" ]
+default = [ "curve", "std"]
 std = [ "ark-std/std", "ark-ff/std", "ark-ec/std", "ark-r1cs-std?/std" ]
 r1cs = [ "ark-r1cs-std" ]
 curve = [ "scalar_field" ]
